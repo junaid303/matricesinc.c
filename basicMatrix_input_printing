@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int rows, cols;
+    printf("Enter rows value : ");
+    scanf("%d",&rows);
+
+    printf("Enter cols value : ");
+    scanf("%d",&cols);
+    int matrix[rows][cols];
+    //input matrix
+    for(int i=0; i<rows; i++)
+    {
+        for(int j=0; j<cols; j++)
+        {
+            printf("Enter rows %d cols %d \n",i, j);
+            scanf("%d",&matrix[i][j]);
+        }
+    }
+    //printing matrix
+    for(int i=0; i<rows; i++)
+    {
+        for(int j=0; j<cols; j++)
+        {
+            printf("%d ",matrix[i][j]);
+        }printf("\n");
+    }return 0;
+}
